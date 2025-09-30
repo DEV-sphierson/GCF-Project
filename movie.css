@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.welcome-page {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('Background-1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.center-container {
+  text-align: center;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+.luxury-btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: #d4af37;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid #d4af37;
+}
+
+.luxury-btn:hover {
+  background: transparent;
+  color: #d4af37;
+  transform: scale(1.05);
+}
+
+
+.anime-page {
+  background: url('Background-2.jpg');
+  background-position: center;
+  background-size: contain;
+  color: #fff;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+header .title {
+  font-size: 2.5rem;
+  color: #d4af37;
+  letter-spacing: 1.5px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  text-decoration: none;
+  color: #d4af37;
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #d4af37;
+  color: #111;
+}
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.anime-card {
+  background: transparent;
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.anime-card img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #d4af37;
+}
+
+.anime-info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #d4af37;
+}
+
+.anime-info p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.enter-button{
+  display: block;
+  margin: 30px auto;
+  background-color: #111;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  grid-column: 1 / -1;
+}
+
+.enter-button:hover {
+  background: #d4af37;
+  color: #111;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(228, 186, 49, 0.4);
+}
+
+.movie-card-container:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(228, 186, 49, 0.4);
+}
+
+.movie-card-container{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  grid-column: 1 / -1;
+}
