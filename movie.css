@@ -12,9 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('Background-1.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #081b29;
 }
 
 .center-container {
@@ -58,9 +56,7 @@
 
 
 .anime-page {
-  background: url('Background-2.jpg');
-  background-position: center;
-  background-size: contain;
+  background: #081b29;
   color: #fff;
   padding: 2rem;
 }
@@ -82,7 +78,8 @@ header .title {
   left: 1rem;
   top: 1rem;
   text-decoration: none;
-  color: #d4af37;
+  color: #0a0a0a;
+  background: #d4af37;
   font-size: 1rem;
   border: 1px solid #d4af37;
   padding: 0.5rem 1rem;
@@ -91,8 +88,8 @@ header .title {
 }
 
 .back-btn:hover {
-  background: #d4af37;
-  color: #111;
+  background: #0a0a0a;
+  color: #d4af37;
 }
 
 .anime-list {
@@ -143,12 +140,12 @@ header .title {
   line-height: 1.6;
 }
 
-.enter-button{
+.enter-button {
   display: block;
   margin: 30px auto;
-  background-color: #111;
-  color: #d4af37;
-  border: 2px solid #d4af37;
+  background-color: #d4AF37;
+  color: #0a0a0a;
+  border: 2px solid #d4AF37;
   padding: 1rem 3rem;
   font-weight: bold;
   font-size: 1.1rem;
@@ -158,18 +155,18 @@ header .title {
 }
 
 .enter-button:hover {
-  background: #d4af37;
-  color: #111;
+  background: #0a0a0a;
+  color: #d4af37;
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(228, 186, 49, 0.4);
 }
 
-.movie-card-container:hover{
+.movie-card-container:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(228, 186, 49, 0.4);
 }
 
-.movie-card-container{
+.movie-card-container {
   display: block;
   margin: 0 auto;
   padding: 0;
