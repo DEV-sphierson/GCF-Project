@@ -309,3 +309,7 @@ body {
   transform: rotate(-11deg) skewY(-41deg);
   transition-delay: 1.2s;
 }
+
+a {
+  text-decoration: none;
+}

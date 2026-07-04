@@ -5,7 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .welcome-page {
   color: #fff;
   height: 100vh;
@@ -54,8 +53,7 @@
   transform: scale(1.05);
 }
 
-
-.anime-page {
+.movie-page {
   background: #081b29;
   color: #fff;
   padding: 2rem;
@@ -92,7 +90,7 @@ header .title {
   color: #d4af37;
 }
 
-.anime-list {
+.movie-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
@@ -100,41 +98,87 @@ header .title {
   margin: 0 auto;
 }
 
-.anime-card {
+.movie-card {
   background: transparent;
   padding: 1.5rem;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.anime-card:hover {
+.movie-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-  animation: animate 10s linear infinite;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6),
+    0 0 30px rgba(212, 175, 55, 0.4),
+    0 0 45px rgba(212, 175, 55, 0.2);
 }
 
-@keyframes animate {
+@keyframes rgbBorder {
+  0% {
+    border-color: #d4af37;
+  }
+
+  10% {
+    border-color: yellow;
+  }
+
+  20% {
+    border-color: lime;
+  }
+
+  30% {
+    border-color: green;
+  }
+
+  40% {
+    border-color: cyan;
+  }
+
+  50% {
+    border-color: blue;
+  }
+
+  60% {
+    border-color: indigo;
+  }
+
+  70% {
+    border-color: violet;
+  }
+
+  80% {
+    border-color: magenta;
+  }
+
+  90% {
+    border-color: red;
+  }
+
   100% {
-    filter: hue-rotate(360deg);
+    border-color: #d4af37;
   }
 }
 
-.anime-card img {
+.movie-card img {
   width: 100%;
   height: fit-content;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
-  border: 2px solid #d4af37;
+  border: 3px solid #d4af37;
+  transition: 0.3s;
 }
 
-.anime-info h2 {
+.movie-card img:hover {
+  animation: rgbBorder 10s linear infinite;
+}
+
+.movie-info h2 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
   color: #d4af37;
 }
 
-.anime-info p {
+.movie-info p {
   font-size: 0.95rem;
   color: #e0e0e0;
   line-height: 1.6;
@@ -159,6 +203,16 @@ header .title {
   color: #d4af37;
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(228, 186, 49, 0.4);
+}
+
+.enter-button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.enter-button a:hover {
+  text-decoration: none;
 }
 
 .movie-card-container:hover {
